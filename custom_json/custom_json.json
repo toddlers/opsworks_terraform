@@ -1,0 +1,10 @@
+{
+  "tz": "Asia/Calcutta",
+  "route53": {
+    "fog_version": "1.29.0"
+  },
+  "opsworks_route53": {
+    "domainname": "stg.example.net",
+    "zone_id": "asdsadasdasdas"
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "Statement": [
+        {
+            "Sid": "Stmt1448878742000",
+            "Effect": "Deny",
+            "Action": [
+                "route53:Update*",
+                "route53:Create*",
+                "route53:Change*",
+                "route53:Delete*"
+            ],
+            "Resource": [
+                "arn:aws:route53:::hostedzone/ZQPMABCDEF"
+            ]
+        },
+        {
+            "Action": [
+                "ec2:*",
+                "iam:PassRole",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeRegions",
+                "cloudwatch:GetMetricStatistics",
+                "elasticloadbalancing:*",
+                "rds:*",
+                "route53:*",
+                "route53domains:*",
+                "cloudfront:ListDistributions",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "s3:ListBucket",
+                "ecs:*"
+            ],
+            "Effect": "Allow",
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

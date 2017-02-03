@@ -1,0 +1,55 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1470392456000",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:CreateTags",
+                "ec2:MonitorInstances",
+                "ec2:Describe*",
+                "elasticmapreduce:*",
+                "route53:Get*",
+                "route53:List*",
+                "elasticloadbalancing:AddTags",
+                "elasticloadbalancing:Describe*",
+                "s3:List*",
+                "opsworks:Describe*",
+                "opsworks:List*",
+                "cloudwatch:Get*",
+                "cloudwatch:List*",
+                "cloudwatch:Describe*",
+                "cloudwatch:PutMetricData",
+                "datapipeline:Describe*",
+                "datapipeline:Get*",
+                "datapipeline:List*",
+                "datapipeline:QueryObjects",
+                "dynamodb:BatchGetItem",
+                "dynamodb:Describe*",
+                "dynamodb:Get*",
+                "dynamodb:List*",
+                "dynamodb:Query",
+                "dynamodb:Scan",
+                "sns:List*",
+                "lambda:List*",
+                "lambda:Get*",
+                "sdb:Select"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "Stmt1470392456002",
+            "Effect": "Deny",
+            "Action": [
+                "ec2:Delete*",
+                "route53:Delete*",
+                "elasticloadbalancing:Delete*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
